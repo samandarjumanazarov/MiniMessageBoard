@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    form(method='POST', action='/new')
+      div
+        label(for='user') Name:
+        input(type='text', id='user', name='user', required=true)
+      div
+        label(for='message') Message:
+        input(type='text', id='message', name='message', required=true)
+      div
+        button(type='submit') Submit
